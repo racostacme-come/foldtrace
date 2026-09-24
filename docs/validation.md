@@ -65,3 +65,8 @@ modules in the wheel, and no virtual environment, build tree, or Git directory.
 The isolated MSBuild packaging step emitted MSB8029/MSB8012 infrastructure warnings
 about temporary/output paths; compilation, linking, installation, and wheel
 execution succeeded. C++ compiler warnings are treated as errors.
+
+The first remote run reported deprecated Node 20 action runtimes. The workflow
+was updated to commit-pinned checkout 7.0.1, setup-python 7.0.0, and upload-artifact
+7.0.1, using tag commits verified through GitHub's API. The numerical code was
+unchanged; the updated workflow is checked before merging the reporting branch.
